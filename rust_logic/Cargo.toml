@@ -1,0 +1,11 @@
+[package]
+name = "rust_logic"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "rust_logic"
+crate-type = ["cdylib"]
+
+[dependencies]
+cxx-juce = "0.8"
