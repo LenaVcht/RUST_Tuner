@@ -1,22 +1,4 @@
-# Rust
-target/
-**/*.rs.bk
-
-# JUCE / CMake
-build/
-CMakeFiles/
-CMakeCache.txt
-*.cmake
-cmake_install.cmake
-
-# Binary artifacts
-*.dylib
-*.so
-*.dll
-*.exe
-*.app
-*.a
-*.lib
-
-# macOS junk
 .DS_Store
+.idea
+cmake-build-*
+target
