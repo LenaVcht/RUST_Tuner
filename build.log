@@ -1,0 +1,1431 @@
+       Fresh find-msvc-tools v0.1.4
+       Fresh shlex v1.3.0
+       Fresh unicode-ident v1.0.22
+       Fresh equivalent v1.0.2
+       Fresh hashbrown v0.16.0
+       Fresh cxxbridge-flags v1.0.188
+       Fresh cc v1.2.45
+       Fresh indexmap v2.12.0
+       Fresh unicode-width v0.2.2
+       Fresh termcolor v1.4.1
+       Fresh foldhash v0.2.0
+       Fresh proc-macro2 v1.0.103
+       Fresh scratch v1.0.9
+       Fresh codespan-reporting v0.13.1
+       Fresh cmake v0.1.54
+       Fresh quote v1.0.42
+       Fresh syn v2.0.110
+       Fresh link-cplusplus v1.0.12
+       Fresh cxx-build v1.0.188
+       Fresh cxxbridge-macro v1.0.188
+       Fresh cxx v1.0.188
+   Compiling cxx-juce v0.8.0 (/Users/nadinemueller/VS_Code/rust/RUST_Tuner)
+     Running `CARGO=/Users/nadinemueller/.rustup/toolchains/stable-x86_64-apple-darwin/bin/cargo CARGO_CFG_FEATURE='' CARGO_CFG_PANIC=unwind CARGO_CFG_TARGET_ABI='' CARGO_CFG_TARGET_ARCH=x86_64 CARGO_CFG_TARGET_ENDIAN=little CARGO_CFG_TARGET_ENV='' CARGO_CFG_TARGET_FAMILY=unix CARGO_CFG_TARGET_FEATURE=cmpxchg16b,fxsr,sse,sse2,sse3,sse4.1,ssse3 CARGO_CFG_TARGET_HAS_ATOMIC=128,16,32,64,8,ptr CARGO_CFG_TARGET_OS=macos CARGO_CFG_TARGET_POINTER_WIDTH=64 CARGO_CFG_TARGET_VENDOR=apple CARGO_CFG_UNIX='' CARGO_ENCODED_RUSTFLAGS='' CARGO_MANIFEST_DIR=/Users/nadinemueller/VS_Code/rust/RUST_Tuner CARGO_MANIFEST_PATH=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/Cargo.toml CARGO_PKG_AUTHORS='' CARGO_PKG_DESCRIPTION='Rust bindings for JUCE using cxx.' CARGO_PKG_HOMEPAGE='' CARGO_PKG_LICENSE='MIT OR Apache-2.0' CARGO_PKG_LICENSE_FILE='' CARGO_PKG_NAME=cxx-juce CARGO_PKG_README=README.md CARGO_PKG_REPOSITORY='https://github.com/LenaVcht/RUST_Tuner.git' CARGO_PKG_RUST_VERSION='' CARGO_PKG_VERSION=0.8.0 CARGO_PKG_VERSION_MAJOR=0 CARGO_PKG_VERSION_MINOR=8 CARGO_PKG_VERSION_PATCH=0 CARGO_PKG_VERSION_PRE='' DEBUG=true DEP_CXXBRIDGE1_HEADER=/Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cxx-1.0.188/include/cxx.h DYLD_FALLBACK_LIBRARY_PATH='/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/deps:/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug:/Users/nadinemueller/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/lib:/Users/nadinemueller/.rustup/toolchains/stable-x86_64-apple-darwin/lib:/Users/nadinemueller/lib:/usr/local/lib:/usr/lib' HOST=x86_64-apple-darwin NUM_JOBS=8 OPT_LEVEL=0 OUT_DIR=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out PROFILE=debug RUSTC=/Users/nadinemueller/.rustup/toolchains/stable-x86_64-apple-darwin/bin/rustc RUSTDOC=/Users/nadinemueller/.rustup/toolchains/stable-x86_64-apple-darwin/bin/rustdoc RUST_TEST_THREADS=1 TARGET=x86_64-apple-darwin /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-c7522d333277f8c1/build-script-build`
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_basics/buffer.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_basics/buffer.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_basics/filters.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_basics/filters.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_basics/midi.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_basics/midi.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/device.rs
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/device.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/device_callback.rs
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/device_callback.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/device_manager.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/device_manager.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/device_type.rs
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/device_type.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/midi_device_info.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/midi_device_info.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/midi_input.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/midi_input.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/midi_output.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/midi_output.rs
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/mod.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_devices/mod.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_processors/plugin_description.rs
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_processors/plugin_description.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_processors/plugin_formats.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_processors/plugin_formats.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_processors/plugin_instance.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_audio_processors/plugin_instance.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_core/array.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_core/array.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_core/bigint.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_core/bigint.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_core/file.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_core/file.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_core/memory.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_core/memory.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_core/string.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_core/string.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_core/system.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_core/system.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_core/time.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_core/time.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_events/application.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_events/application.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_events/message_manager.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_events/message_manager.rs
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_events/mod.rs
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] CXX include path:
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0]   /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_PREFIX=cxx-juce
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+[cxx-juce 0.8.0] cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+[cxx-juce 0.8.0] cargo:rerun-if-changed=src/juce_events/mod.rs
+[cxx-juce 0.8.0] CMAKE_TOOLCHAIN_FILE_x86_64-apple-darwin = None
+[cxx-juce 0.8.0] CMAKE_TOOLCHAIN_FILE_x86_64_apple_darwin = None
+[cxx-juce 0.8.0] HOST_CMAKE_TOOLCHAIN_FILE = None
+[cxx-juce 0.8.0] CMAKE_TOOLCHAIN_FILE = None
+[cxx-juce 0.8.0] CMAKE_GENERATOR_x86_64-apple-darwin = None
+[cxx-juce 0.8.0] CMAKE_GENERATOR_x86_64_apple_darwin = None
+[cxx-juce 0.8.0] HOST_CMAKE_GENERATOR = None
+[cxx-juce 0.8.0] CMAKE_GENERATOR = None
+[cxx-juce 0.8.0] CMAKE_PREFIX_PATH_x86_64-apple-darwin = None
+[cxx-juce 0.8.0] CMAKE_PREFIX_PATH_x86_64_apple_darwin = None
+[cxx-juce 0.8.0] HOST_CMAKE_PREFIX_PATH = None
+[cxx-juce 0.8.0] CMAKE_PREFIX_PATH = None
+[cxx-juce 0.8.0] CMAKE_x86_64-apple-darwin = None
+[cxx-juce 0.8.0] CMAKE_x86_64_apple_darwin = None
+[cxx-juce 0.8.0] HOST_CMAKE = None
+[cxx-juce 0.8.0] CMAKE = None
+[cxx-juce 0.8.0] running: cd "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build" && CMAKE_PREFIX_PATH="" LC_ALL="C" "cmake" "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge" "-DCMAKE_OSX_ARCHITECTURES=x86_64" "-DCXX_JUCE_BRIDGE_FILES=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/buffer.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/filters.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/midi.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/device.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/device_callback.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/device_manager.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/device_type.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/midi_device_info.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/midi_input.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/midi_output.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/mod.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_processors/plugin_description.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_processors/plugin_formats.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_processors/plugin_instance.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_core/array.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_core/bigint.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_core/file.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_core/memory.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_core/string.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_core/system.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_core/time.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_events/application.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_events/message_manager.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_events/mod.rs.cc" "-DCXX_JUCE_USE_ASIO=OFF" "-DCMAKE_OSX_DEPLOYMENT_TARGET=12.0" "-DCMAKE_INSTALL_PREFIX=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out" "-DCMAKE_C_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64 --target=x86_64-apple-macosx -mmacosx-version-min=14.4" "-DCMAKE_C_COMPILER=/usr/bin/cc" "-DCMAKE_CXX_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64 --target=x86_64-apple-macosx -mmacosx-version-min=14.4" "-DCMAKE_CXX_COMPILER=/usr/bin/c++" "-DCMAKE_ASM_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64 --target=x86_64-apple-macosx -mmacosx-version-min=14.4" "-DCMAKE_ASM_COMPILER=/usr/bin/cc" "-DCMAKE_BUILD_TYPE=Debug"
+[cxx-juce 0.8.0] CMake Warning (dev) at /usr/local/share/cmake/Modules/FetchContent.cmake:1383 (message):
+[cxx-juce 0.8.0]   The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+[cxx-juce 0.8.0]   not set.  The policy's OLD behavior will be used.  When using a URL
+[cxx-juce 0.8.0]   download, the timestamps of extracted files should preferably be that of
+[cxx-juce 0.8.0]   the time of extraction, otherwise code that depends on the extracted
+[cxx-juce 0.8.0]   contents might not be rebuilt if the URL changes.  The OLD behavior
+[cxx-juce 0.8.0]   preserves the timestamps from the archive instead, but this is usually not
+[cxx-juce 0.8.0]   what you want.  Update your project to the NEW behavior or specify the
+[cxx-juce 0.8.0]   DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+[cxx-juce 0.8.0]   robustness issue.
+[cxx-juce 0.8.0] Call Stack (most recent call first):
+[cxx-juce 0.8.0]   CMakeLists.txt:16 (FetchContent_Declare)
+[cxx-juce 0.8.0] This warning is for project developers.  Use -Wno-dev to suppress it.
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] -- Fetching JUCE 7.0.12...
+[cxx-juce 0.8.0] -- Using bindings at /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge
+[cxx-juce 0.8.0] -- Configuring done (1.2s)
+[cxx-juce 0.8.0] -- Generating done (0.1s)
+[cxx-juce 0.8.0] -- Build files have been written to: /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build
+[cxx-juce 0.8.0] running: cd "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build" && LC_ALL="C" "cmake" "--build" "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build" "--target" "cxx-juce" "--config" "Debug" "--parallel" "8"
+[cxx-juce 0.8.0] [  2%] Building CXX object CMakeFiles/cxx-juce.dir/cxx_juce_audio_basics/cxx_juce_audio_basics.cpp.o
+[cxx-juce 0.8.0] [  4%] Building CXX object CMakeFiles/cxx-juce.dir/cxx_juce_audio_devices/cxx_juce_audio_devices.cpp.o
+[cxx-juce 0.8.0] [  7%] Building CXX object CMakeFiles/cxx-juce.dir/cxx_juce_audio_processors/cxx_juce_audio_processors.cpp.o
+[cxx-juce 0.8.0] [  9%] Building CXX object CMakeFiles/cxx-juce.dir/cxx_juce_core/cxx_juce_core.cpp.o
+[cxx-juce 0.8.0] [ 12%] Building CXX object CMakeFiles/cxx-juce.dir/cxx_juce_events/cxx_juce_events.cpp.o
+[cxx-juce 0.8.0] [ 14%] Building CXX object CMakeFiles/cxx-juce.dir/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/buffer.rs.cc.o
+[cxx-juce 0.8.0] [ 17%] Building CXX object CMakeFiles/cxx-juce.dir/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/filters.rs.cc.o
+[cxx-juce 0.8.0] [ 19%] Building CXX object CMakeFiles/cxx-juce.dir/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/midi.rs.cc.o
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_basics/cxx_juce_audio_basics.cpp:1:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_utils.h:4:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:2:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+[cxx-juce 0.8.0]     typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+[cxx-juce 0.8.0]                      ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+[cxx-juce 0.8.0]                    ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+[cxx-juce 0.8.0]   static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+[cxx-juce 0.8.0]                                                           ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+[cxx-juce 0.8.0]                                ^
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_core/cxx_juce_core.cpp:1:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_utils.h:4:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:2:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+[cxx-juce 0.8.0] using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+[cxx-juce 0.8.0]                                       ^
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+[cxx-juce 0.8.0]     _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+[cxx-juce 0.8.0]     ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h::193:7: note: in instantiation of requirement here
+[cxx-juce 0.8.0] 118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+[cxx-juce 0.8.0]     { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+[cxx-juce 0.8.0]       ^~~~~~~~~~~~~~~~~~~~~~    typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+[cxx-juce 0.8.0]                      ^
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+[cxx-juce 0.8.0]                    ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195::897:17: note: expanded from macro '_VSTD'
+[cxx-juce 0.8.0] #  define _VSTD std
+[cxx-juce 0.8.0]                 ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]   requires(const _Ip& __i) {
+[cxx-juce 0.8.0]   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]     contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+[cxx-juce 0.8.0] static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+[cxx-juce 0.8.0]               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+[cxx-juce 0.8.0] struct __pointer_traits_element_type;
+[cxx-juce 0.8.0]        ^
+[cxx-juce 0.8.0] 59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+[cxx-juce 0.8.0]   static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+[cxx-juce 0.8.0]                                                           ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+[cxx-juce 0.8.0]                                ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+[cxx-juce 0.8.0] using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+[cxx-juce 0.8.0]                                       ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+[cxx-juce 0.8.0]     _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+[cxx-juce 0.8.0]     ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:193:7: note: in instantiation of requirement here
+[cxx-juce 0.8.0]     { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+[cxx-juce 0.8.0]       ^~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:897:17: note: expanded from macro '_VSTD'
+[cxx-juce 0.8.0] #  define _VSTD std
+[cxx-juce 0.8.0]                 ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]   requires(const _Ip& __i) {
+[cxx-juce 0.8.0]   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]     contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+[cxx-juce 0.8.0] static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+[cxx-juce 0.8.0]               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+[cxx-juce 0.8.0] struct __pointer_traits_element_type;
+[cxx-juce 0.8.0]        ^
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_events/cxx_juce_events.cpp:1:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_events/cxx_juce_events.h:3:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_events/juce_events.h:52:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/juce_core.h:204:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/system/juce_StandardHeader.h:50:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+[cxx-juce 0.8.0]     typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+[cxx-juce 0.8.0]                      ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+[cxx-juce 0.8.0]                    ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+[cxx-juce 0.8.0]   static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+[cxx-juce 0.8.0]                                                           ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+[cxx-juce 0.8.0]                                ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+[cxx-juce 0.8.0] using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+[cxx-juce 0.8.0]                                       ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+[cxx-juce 0.8.0]     _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+[cxx-juce 0.8.0]     ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:193:7: note: in instantiation of requirement here
+[cxx-juce 0.8.0]     { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+[cxx-juce 0.8.0]       ^~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:897:17: note: expanded from macro '_VSTD'
+[cxx-juce 0.8.0] #  define _VSTD std
+[cxx-juce 0.8.0]                 ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]   requires(const _Ip& __i) {
+[cxx-juce 0.8.0]   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]     contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+[cxx-juce 0.8.0] static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+[cxx-juce 0.8.0]               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+[cxx-juce 0.8.0] struct __pointer_traits_element_type;
+[cxx-juce 0.8.0]        ^
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/midi.rs.cc:1:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce.h:3:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_basics/cxx_juce_audio_basics.h:3:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_audio_basics/juce_audio_basics.h:54:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/juce_core.h:204In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/buffer.rs.cc:1:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce.h:3:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_basics/cxx_juce_audio_basics.h:3:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_audio_basics/juce_audio_basics.h:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/system/juce_StandardHeader.h:50:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+[cxx-juce 0.8.0]     typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+[cxx-juce 0.8.0]                      ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+[cxx-juce 0.8.0]                    ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+[cxx-juce 0.8.0]   static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+[cxx-juce 0.8.0]                                                           ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+[cxx-juce 0.8.0]                                ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+[cxx-juce 0.8.0] using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+[cxx-juce 0.8.0]                                       ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+[cxx-juce 0.8.0]     _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+[cxx-juce 0.8.0]     ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:193:7: note: in instantiation of requirement here
+[cxx-juce 0.8.0]     { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+[cxx-juce 0.8.0]       ^~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:897:17: note: expanded from macro '_VSTD'
+[cxx-juce 0.8.0] #  define _VSTD std
+[cxx-juce 0.8.0]                 ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]   requires(const _Ip& __i) {
+[cxx-juce 0.8.0]   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] :    contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] 54/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:
+[cxx-juce 0.8.0] :In file included from 122/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/juce_core.h::2045: :
+[cxx-juce 0.8.0] note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/system/juce_StandardHeader.h:50:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744    contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+[cxx-juce 0.8.0] static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+[cxx-juce 0.8.0]               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+[cxx-juce 0.8.0] struct __pointer_traits_element_type;
+[cxx-juce 0.8.0]        ^
+[cxx-juce 0.8.0] :
+[cxx-juce 0.8.0] In file included from In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/filters.rs.cc:1:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce.h:3:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_basics/cxx_juce_audio_basics.h:3:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_audio_basics/juce_audio_basics.h:54:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/juce_core.h:204:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/system/juce_StandardHeader.h:50:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+[cxx-juce 0.8.0]     typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+[cxx-juce 0.8.0]                      ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+[cxx-juce 0.8.0]                    ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+[cxx-juce 0.8.0]   static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+[cxx-juce 0.8.0]                                                           ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+[cxx-juce 0.8.0]                                ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+[cxx-juce 0.8.0] using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+[cxx-juce 0.8.0]                                       ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+[cxx-juce 0.8.0]     _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+[cxx-juce 0.8.0]     ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:193:7: note: in instantiation of requirement here
+[cxx-juce 0.8.0]     { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+[cxx-juce 0.8.0]       ^~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:897:17: note: expanded from macro '_VSTD'
+[cxx-juce 0.8.0] #  define _VSTD std
+[cxx-juce 0.8.0]                 ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]   requires(const _Ip& __i) {
+[cxx-juce 0.8.0]   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]     contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+[cxx-juce 0.8.0] static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+[cxx-juce 0.8.0]               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+[cxx-juce 0.8.0] struct __pointer_traits_element_type;
+[cxx-juce 0.8.0]        ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+[cxx-juce 0.8.0]     typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+[cxx-juce 0.8.0]                      ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+[cxx-juce 0.8.0]                    ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+[cxx-juce 0.8.0]   static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+[cxx-juce 0.8.0]                                                           ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+[cxx-juce 0.8.0]                                ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+[cxx-juce 0.8.0] using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+[cxx-juce 0.8.0]                                       ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+[cxx-juce 0.8.0]     _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+[cxx-juce 0.8.0]     ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:193:7: note: in instantiation of requirement here
+[cxx-juce 0.8.0]     { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+[cxx-juce 0.8.0]       ^~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:897:17: note: expanded from macro '_VSTD'
+[cxx-juce 0.8.0] #  define _VSTD std
+[cxx-juce 0.8.0]                 ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]   requires(const _Ip& __i) {
+[cxx-juce 0.8.0]   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]     contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+[cxx-juce 0.8.0] static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+[cxx-juce 0.8.0]               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+[cxx-juce 0.8.0] struct __pointer_traits_element_type;
+[cxx-juce 0.8.0]        ^
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_devices/cxx_juce_audio_devices.cpp:1:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_devices/cxx_juce_audio_devices.h:3:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_audio_devices/juce_audio_devices.h:56:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_events/juce_events.h:52:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/juce_core.h:204:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/system/juce_StandardHeader.h:50:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+[cxx-juce 0.8.0]     typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+[cxx-juce 0.8.0]                      ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+[cxx-juce 0.8.0]                    ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+[cxx-juce 0.8.0]   static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+[cxx-juce 0.8.0]                                                           ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+[cxx-juce 0.8.0]                                ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+[cxx-juce 0.8.0] using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+[cxx-juce 0.8.0]                                       ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+[cxx-juce 0.8.0]     _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+[cxx-juce 0.8.0]     ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:193:7: note: in instantiation of requirement here
+[cxx-juce 0.8.0]     { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+[cxx-juce 0.8.0]       ^~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:897:17: note: expanded from macro '_VSTD'
+[cxx-juce 0.8.0] #  define _VSTD std
+[cxx-juce 0.8.0]                 ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]   requires(const _Ip& __i) {
+[cxx-juce 0.8.0]   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]     contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+[cxx-juce 0.8.0] static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+[cxx-juce 0.8.0]               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+[cxx-juce 0.8.0] struct __pointer_traits_element_type;
+[cxx-juce 0.8.0]        ^
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_processors/cxx_juce_audio_processors.cpp:1:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_processors/cxx_juce_audio_processors.h:3:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_audio_processors/juce_audio_processors.h:57:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_gui_basics/juce_gui_basics.h:60:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_graphics/juce_graphics.h:58:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/juce_core.h:204:
+[cxx-juce 0.8.0] In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/system/juce_StandardHeader.h:50:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+[cxx-juce 0.8.0] In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+[cxx-juce 0.8.0]     typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+[cxx-juce 0.8.0]                      ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+[cxx-juce 0.8.0]                    ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+[cxx-juce 0.8.0]   static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+[cxx-juce 0.8.0]                                                           ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0] __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+[cxx-juce 0.8.0]                                ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+[cxx-juce 0.8.0] using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+[cxx-juce 0.8.0]                                       ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+[cxx-juce 0.8.0]     _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+[cxx-juce 0.8.0]     ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:193:7: note: in instantiation of requirement here
+[cxx-juce 0.8.0]     { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+[cxx-juce 0.8.0]       ^~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:897:17: note: expanded from macro '_VSTD'
+[cxx-juce 0.8.0] #  define _VSTD std
+[cxx-juce 0.8.0]                 ^
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]   requires(const _Ip& __i) {
+[cxx-juce 0.8.0]   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+[cxx-juce 0.8.0]     contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while substituting template arguments into constraint expression here
+[cxx-juce 0.8.0]     contiguous_iterator<iterator_t<_Tp>> &&
+[cxx-juce 0.8.0]     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+[cxx-juce 0.8.0] static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+[cxx-juce 0.8.0]               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[cxx-juce 0.8.0] /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+[cxx-juce 0.8.0] struct __pointer_traits_element_type;
+[cxx-juce 0.8.0]        ^
+[cxx-juce 0.8.0] 1 error generated.
+[cxx-juce 0.8.0] 1 error generated.
+[cxx-juce 0.8.0] 1 error generated.
+[cxx-juce 0.8.0] 1 error generated.
+[cxx-juce 0.8.0] make[3]: *** [CMakeFiles/cxx-juce.dir/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/buffer.rs.cc.o] Error 1
+[cxx-juce 0.8.0] make[3]: *** Waiting for unfinished jobs....
+[cxx-juce 0.8.0] 1 error generated.
+[cxx-juce 0.8.0] make[3]: *** [CMakeFiles/cxx-juce.dir/cxx_juce_audio_basics/cxx_juce_audio_basics.cpp.o] Error 1
+[cxx-juce 0.8.0] make[3]: *** [CMakeFiles/cxx-juce.dir/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/midi.rs.cc.o] Error 1
+[cxx-juce 0.8.0] make[3]: *** [CMakeFiles/cxx-juce.dir/cxx_juce_core/cxx_juce_core.cpp.o] Error 1
+[cxx-juce 0.8.0] make[3]: *** [CMakeFiles/cxx-juce.dir/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/filters.rs.cc.o] Error 1
+[cxx-juce 0.8.0] 1 error generated.
+[cxx-juce 0.8.0] 1 error generated.
+[cxx-juce 0.8.0] make[3]: *** [CMakeFiles/cxx-juce.dir/cxx_juce_audio_devices/cxx_juce_audio_devices.cpp.o] Error 1
+[cxx-juce 0.8.0] make[3]: *** [CMakeFiles/cxx-juce.dir/cxx_juce_events/cxx_juce_events.cpp.o] Error 1
+[cxx-juce 0.8.0] 1 error generated.
+[cxx-juce 0.8.0] make[3]: *** [CMakeFiles/cxx-juce.dir/cxx_juce_audio_processors/cxx_juce_audio_processors.cpp.o] Error 1
+[cxx-juce 0.8.0] make[2]: *** [CMakeFiles/cxx-juce.dir/all] Error 2
+[cxx-juce 0.8.0] make[1]: *** [CMakeFiles/cxx-juce.dir/rule] Error 2
+[cxx-juce 0.8.0] make: *** [cxx-juce] Error 2
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] thread 'main' (17195087) panicked at /Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cmake-0.1.54/src/lib.rs:1119:5:
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] command did not execute successfully, got: exit status: 2
+[cxx-juce 0.8.0] 
+[cxx-juce 0.8.0] build script failed, must exit now
+[cxx-juce 0.8.0] stack backtrace:
+[cxx-juce 0.8.0]    0: __rustc::rust_begin_unwind
+[cxx-juce 0.8.0]              at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/std/src/panicking.rs:698:5
+[cxx-juce 0.8.0]    1: core::panicking::panic_fmt
+[cxx-juce 0.8.0]              at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/core/src/panicking.rs:80:14
+[cxx-juce 0.8.0]    2: cmake::fail
+[cxx-juce 0.8.0]    3: cmake::run
+[cxx-juce 0.8.0]    4: cmake::Config::build
+[cxx-juce 0.8.0]    5: build_script_build::main
+[cxx-juce 0.8.0]    6: core::ops::function::FnOnce::call_once
+[cxx-juce 0.8.0] note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+error: failed to run custom build command for `cxx-juce v0.8.0 (/Users/nadinemueller/VS_Code/rust/RUST_Tuner)`
+note: To improve backtraces for build dependencies, set the CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true environment variable to enable debug information generation.
+
+Caused by:
+  process didn't exit successfully: `CARGO=/Users/nadinemueller/.rustup/toolchains/stable-x86_64-apple-darwin/bin/cargo CARGO_CFG_FEATURE='' CARGO_CFG_PANIC=unwind CARGO_CFG_TARGET_ABI='' CARGO_CFG_TARGET_ARCH=x86_64 CARGO_CFG_TARGET_ENDIAN=little CARGO_CFG_TARGET_ENV='' CARGO_CFG_TARGET_FAMILY=unix CARGO_CFG_TARGET_FEATURE=cmpxchg16b,fxsr,sse,sse2,sse3,sse4.1,ssse3 CARGO_CFG_TARGET_HAS_ATOMIC=128,16,32,64,8,ptr CARGO_CFG_TARGET_OS=macos CARGO_CFG_TARGET_POINTER_WIDTH=64 CARGO_CFG_TARGET_VENDOR=apple CARGO_CFG_UNIX='' CARGO_ENCODED_RUSTFLAGS='' CARGO_MANIFEST_DIR=/Users/nadinemueller/VS_Code/rust/RUST_Tuner CARGO_MANIFEST_PATH=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/Cargo.toml CARGO_PKG_AUTHORS='' CARGO_PKG_DESCRIPTION='Rust bindings for JUCE using cxx.' CARGO_PKG_HOMEPAGE='' CARGO_PKG_LICENSE='MIT OR Apache-2.0' CARGO_PKG_LICENSE_FILE='' CARGO_PKG_NAME=cxx-juce CARGO_PKG_README=README.md CARGO_PKG_REPOSITORY='https://github.com/LenaVcht/RUST_Tuner.git' CARGO_PKG_RUST_VERSION='' CARGO_PKG_VERSION=0.8.0 CARGO_PKG_VERSION_MAJOR=0 CARGO_PKG_VERSION_MINOR=8 CARGO_PKG_VERSION_PATCH=0 CARGO_PKG_VERSION_PRE='' DEBUG=true DEP_CXXBRIDGE1_HEADER=/Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cxx-1.0.188/include/cxx.h DYLD_FALLBACK_LIBRARY_PATH='/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/deps:/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug:/Users/nadinemueller/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/lib:/Users/nadinemueller/.rustup/toolchains/stable-x86_64-apple-darwin/lib:/Users/nadinemueller/lib:/usr/local/lib:/usr/lib' HOST=x86_64-apple-darwin NUM_JOBS=8 OPT_LEVEL=0 OUT_DIR=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out PROFILE=debug RUSTC=/Users/nadinemueller/.rustup/toolchains/stable-x86_64-apple-darwin/bin/rustc RUSTDOC=/Users/nadinemueller/.rustup/toolchains/stable-x86_64-apple-darwin/bin/rustdoc RUST_TEST_THREADS=1 TARGET=x86_64-apple-darwin /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-c7522d333277f8c1/build-script-build` (exit status: 101)
+  --- stdout
+  cargo:rerun-if-changed=src/juce_audio_basics/buffer.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_audio_basics/buffer.rs
+  cargo:rerun-if-changed=src/juce_audio_basics/filters.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_audio_basics/filters.rs
+  cargo:rerun-if-changed=src/juce_audio_basics/midi.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_audio_basics/midi.rs
+  cargo:rerun-if-changed=src/juce_audio_devices/device.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_audio_devices/device.rs
+  cargo:rerun-if-changed=src/juce_audio_devices/device_callback.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_audio_devices/device_callback.rs
+  cargo:rerun-if-changed=src/juce_audio_devices/device_manager.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_audio_devices/device_manager.rs
+  cargo:rerun-if-changed=src/juce_audio_devices/device_type.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_audio_devices/device_type.rs
+  cargo:rerun-if-changed=src/juce_audio_devices/midi_device_info.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_audio_devices/midi_device_info.rs
+  cargo:rerun-if-changed=src/juce_audio_devices/midi_input.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_audio_devices/midi_input.rs
+  cargo:rerun-if-changed=src/juce_audio_devices/midi_output.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_audio_devices/midi_output.rs
+  cargo:rerun-if-changed=src/juce_audio_devices/mod.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_audio_devices/mod.rs
+  cargo:rerun-if-changed=src/juce_audio_processors/plugin_description.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_audio_processors/plugin_description.rs
+  cargo:rerun-if-changed=src/juce_audio_processors/plugin_formats.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_audio_processors/plugin_formats.rs
+  cargo:rerun-if-changed=src/juce_audio_processors/plugin_instance.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_audio_processors/plugin_instance.rs
+  cargo:rerun-if-changed=src/juce_core/array.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_core/array.rs
+  cargo:rerun-if-changed=src/juce_core/bigint.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_core/bigint.rs
+  cargo:rerun-if-changed=src/juce_core/file.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_core/file.rs
+  cargo:rerun-if-changed=src/juce_core/memory.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_core/memory.rs
+  cargo:rerun-if-changed=src/juce_core/string.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_core/string.rs
+  cargo:rerun-if-changed=src/juce_core/system.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_core/system.rs
+  cargo:rerun-if-changed=src/juce_core/time.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_core/time.rs
+  cargo:rerun-if-changed=src/juce_events/application.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_events/application.rs
+  cargo:rerun-if-changed=src/juce_events/message_manager.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_events/message_manager.rs
+  cargo:rerun-if-changed=src/juce_events/mod.rs
+  cargo:CXXBRIDGE_PREFIX=cxx-juce
+  cargo:CXXBRIDGE_DIR0=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+  cargo:CXXBRIDGE_DIR1=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  cargo:rerun-if-changed=src/juce_events/mod.rs
+  CMAKE_TOOLCHAIN_FILE_x86_64-apple-darwin = None
+  CMAKE_TOOLCHAIN_FILE_x86_64_apple_darwin = None
+  HOST_CMAKE_TOOLCHAIN_FILE = None
+  CMAKE_TOOLCHAIN_FILE = None
+  CMAKE_GENERATOR_x86_64-apple-darwin = None
+  CMAKE_GENERATOR_x86_64_apple_darwin = None
+  HOST_CMAKE_GENERATOR = None
+  CMAKE_GENERATOR = None
+  CMAKE_PREFIX_PATH_x86_64-apple-darwin = None
+  CMAKE_PREFIX_PATH_x86_64_apple_darwin = None
+  HOST_CMAKE_PREFIX_PATH = None
+  CMAKE_PREFIX_PATH = None
+  CMAKE_x86_64-apple-darwin = None
+  CMAKE_x86_64_apple_darwin = None
+  HOST_CMAKE = None
+  CMAKE = None
+  running: cd "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build" && CMAKE_PREFIX_PATH="" LC_ALL="C" "cmake" "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge" "-DCMAKE_OSX_ARCHITECTURES=x86_64" "-DCXX_JUCE_BRIDGE_FILES=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/buffer.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/filters.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/midi.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/device.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/device_callback.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/device_manager.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/device_type.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/midi_device_info.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/midi_input.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/midi_output.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_devices/mod.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_processors/plugin_description.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_processors/plugin_formats.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_processors/plugin_instance.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_core/array.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_core/bigint.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_core/file.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_core/memory.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_core/string.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_core/system.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_core/time.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_events/application.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_events/message_manager.rs.cc;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_events/mod.rs.cc" "-DCXX_JUCE_USE_ASIO=OFF" "-DCMAKE_OSX_DEPLOYMENT_TARGET=12.0" "-DCMAKE_INSTALL_PREFIX=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out" "-DCMAKE_C_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64 --target=x86_64-apple-macosx -mmacosx-version-min=14.4" "-DCMAKE_C_COMPILER=/usr/bin/cc" "-DCMAKE_CXX_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64 --target=x86_64-apple-macosx -mmacosx-version-min=14.4" "-DCMAKE_CXX_COMPILER=/usr/bin/c++" "-DCMAKE_ASM_FLAGS= -ffunction-sections -fdata-sections -fPIC -m64 --target=x86_64-apple-macosx -mmacosx-version-min=14.4" "-DCMAKE_ASM_COMPILER=/usr/bin/cc" "-DCMAKE_BUILD_TYPE=Debug"
+  -- Fetching JUCE 7.0.12...
+  -- Using bindings at /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge
+  -- Configuring done (1.2s)
+  -- Generating done (0.1s)
+  -- Build files have been written to: /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build
+  running: cd "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build" && LC_ALL="C" "cmake" "--build" "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build" "--target" "cxx-juce" "--config" "Debug" "--parallel" "8"
+  [  2%] Building CXX object CMakeFiles/cxx-juce.dir/cxx_juce_audio_basics/cxx_juce_audio_basics.cpp.o
+  [  4%] Building CXX object CMakeFiles/cxx-juce.dir/cxx_juce_audio_devices/cxx_juce_audio_devices.cpp.o
+  [  7%] Building CXX object CMakeFiles/cxx-juce.dir/cxx_juce_audio_processors/cxx_juce_audio_processors.cpp.o
+  [  9%] Building CXX object CMakeFiles/cxx-juce.dir/cxx_juce_core/cxx_juce_core.cpp.o
+  [ 12%] Building CXX object CMakeFiles/cxx-juce.dir/cxx_juce_events/cxx_juce_events.cpp.o
+  [ 14%] Building CXX object CMakeFiles/cxx-juce.dir/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/buffer.rs.cc.o
+  [ 17%] Building CXX object CMakeFiles/cxx-juce.dir/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/filters.rs.cc.o
+  [ 19%] Building CXX object CMakeFiles/cxx-juce.dir/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/midi.rs.cc.o
+
+  --- stderr
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+
+  CXX include path:
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/include
+    /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/cxxbridge/crate
+  CMake Warning (dev) at /usr/local/share/cmake/Modules/FetchContent.cmake:1383 (message):
+    The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+    not set.  The policy's OLD behavior will be used.  When using a URL
+    download, the timestamps of extracted files should preferably be that of
+    the time of extraction, otherwise code that depends on the extracted
+    contents might not be rebuilt if the URL changes.  The OLD behavior
+    preserves the timestamps from the archive instead, but this is usually not
+    what you want.  Update your project to the NEW behavior or specify the
+    DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+    robustness issue.
+  Call Stack (most recent call first):
+    CMakeLists.txt:16 (FetchContent_Declare)
+  This warning is for project developers.  Use -Wno-dev to suppress it.
+
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_basics/cxx_juce_audio_basics.cpp:1:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_utils.h:4:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:2:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+      typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+                       ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+      decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+                     ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+    static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+                                                            ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+  __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+                                 ^
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_core/cxx_juce_core.cpp:1:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_utils.h:4:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:2:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+  using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+                                        ^
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+      _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+      ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h::193:7: note: in instantiation of requirement here
+  118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+      { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+        ^~~~~~~~~~~~~~~~~~~~~~    typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+                       ^
+
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+      decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+                     ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195::897:17: note: expanded from macro '_VSTD'
+  #  define _VSTD std
+                  ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+    requires(const _Ip& __i) {
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+      contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while substituting template arguments into constraint expression here
+      contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+  static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+  struct __pointer_traits_element_type;
+         ^
+  59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+    static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+                                                            ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+  __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+                                 ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+  using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+                                        ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+      _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+      ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:193:7: note: in instantiation of requirement here
+      { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+        ^~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:897:17: note: expanded from macro '_VSTD'
+  #  define _VSTD std
+                  ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+    requires(const _Ip& __i) {
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+      contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while substituting template arguments into constraint expression here
+      contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+  static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+  struct __pointer_traits_element_type;
+         ^
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_events/cxx_juce_events.cpp:1:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_events/cxx_juce_events.h:3:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_events/juce_events.h:52:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/juce_core.h:204:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/system/juce_StandardHeader.h:50:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+      typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+                       ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+      decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+                     ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+    static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+                                                            ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+  __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+                                 ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+  using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+                                        ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+      _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+      ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:193:7: note: in instantiation of requirement here
+      { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+        ^~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:897:17: note: expanded from macro '_VSTD'
+  #  define _VSTD std
+                  ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+    requires(const _Ip& __i) {
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+      contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while substituting template arguments into constraint expression here
+      contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+  static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+  struct __pointer_traits_element_type;
+         ^
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/midi.rs.cc:1:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce.h:3:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_basics/cxx_juce_audio_basics.h:3:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_audio_basics/juce_audio_basics.h:54:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/juce_core.h:204In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/buffer.rs.cc:1:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce.h:3:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_basics/cxx_juce_audio_basics.h:3:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_audio_basics/juce_audio_basics.h:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/system/juce_StandardHeader.h:50:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+      typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+                       ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+      decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+                     ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+    static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+                                                            ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+  __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+                                 ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+  using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+                                        ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+      _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+      ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:193:7: note: in instantiation of requirement here
+      { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+        ^~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:897:17: note: expanded from macro '_VSTD'
+  #  define _VSTD std
+                  ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+    requires(const _Ip& __i) {
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+  :    contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  54/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:
+  :In file included from 122/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/juce_core.h::2045: :
+  note: while substituting template arguments into constraint expression here
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/system/juce_StandardHeader.h:50:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744    contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+  static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+  struct __pointer_traits_element_type;
+         ^
+  :
+  In file included from In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/filters.rs.cc:1:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce.h:3:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_basics/cxx_juce_audio_basics.h:3:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_audio_basics/juce_audio_basics.h:54:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/juce_core.h:204:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/system/juce_StandardHeader.h:50:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+      typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+                       ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+      decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+                     ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+    static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+                                                            ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+  __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+                                 ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+  using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+                                        ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+      _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+      ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:193:7: note: in instantiation of requirement here
+      { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+        ^~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:897:17: note: expanded from macro '_VSTD'
+  #  define _VSTD std
+                  ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+    requires(const _Ip& __i) {
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+      contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while substituting template arguments into constraint expression here
+      contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+  static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+  struct __pointer_traits_element_type;
+         ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+      typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+                       ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+      decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+                     ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+    static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+                                                            ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+  __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+                                 ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+  using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+                                        ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+      _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+      ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:193:7: note: in instantiation of requirement here
+      { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+        ^~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:897:17: note: expanded from macro '_VSTD'
+  #  define _VSTD std
+                  ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+    requires(const _Ip& __i) {
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+      contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while substituting template arguments into constraint expression here
+      contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+  static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+  struct __pointer_traits_element_type;
+         ^
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_devices/cxx_juce_audio_devices.cpp:1:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_devices/cxx_juce_audio_devices.h:3:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_audio_devices/juce_audio_devices.h:56:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_events/juce_events.h:52:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/juce_core.h:204:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/system/juce_StandardHeader.h:50:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+      typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+                       ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+      decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+                     ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+    static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+                                                            ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+  __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+                                 ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+  using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+                                        ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+      _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+      ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:193:7: note: in instantiation of requirement here
+      { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+        ^~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:897:17: note: expanded from macro '_VSTD'
+  #  define _VSTD std
+                  ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+    requires(const _Ip& __i) {
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+      contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while substituting template arguments into constraint expression here
+      contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+  static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+  struct __pointer_traits_element_type;
+         ^
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_processors/cxx_juce_audio_processors.cpp:1:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/cxx_juce_audio_processors/cxx_juce_audio_processors.h:3:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_audio_processors/juce_audio_processors.h:57:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_gui_basics/juce_gui_basics.h:60:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_graphics/juce_graphics.h:58:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/juce_core.h:204:
+  In file included from /Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src/modules/juce_core/system/juce_StandardHeader.h:50:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/algorithm:1744:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:14:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:13:
+  In file included from /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:34:
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:118:22: error: implicit instantiation of undefined template 'std::__pointer_traits_element_type<rust::Slice<const unsigned char>::iterator>'
+      typedef typename __pointer_traits_element_type<pointer>::type    element_type;
+                       ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:182:20: note: in instantiation of template class 'std::pointer_traits<rust::Slice<const unsigned char>::iterator>' requested here
+      decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer&>()))
+                     ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: during template argument deduction for class template partial specialization '_HasToAddress<_Pointer, decltype((void)pointer_traits<_Pointer>::to_address(std::declval<const _Pointer &>()))>' [with _Pointer = rust::Slice<const unsigned char>::iterator]
+    static const bool value = _HasArrow<_Pointer>::value || _HasToAddress<_Pointer>::value;
+                                                            ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:195:59: note: in instantiation of template class 'std::_HasToAddress<rust::Slice<const unsigned char>::iterator>' requested here
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:27:32: note: in instantiation of template class 'std::_IsFancyPointer<rust::Slice<const unsigned char>::iterator>' requested here
+  __expand_to_true<__enable_if_t<_Pred::value>...> __and_helper(int);
+                                 ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/conjunction.h:38:39: note: while substituting explicitly-specified template arguments into function template '__and_helper' 
+  using _And _LIBCPP_NODEBUG = decltype(std::__and_helper<_Pred...>(0));
+                                        ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:200:5: note: (skipping 4 contexts in backtrace; use -ftemplate-backtrace-limit=0 to see all)
+      _And<is_class<_Pointer>, _IsFancyPointer<_Pointer> >::value
+      ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:193:7: note: in instantiation of requirement here
+      { _VSTD::to_address(__i) } -> same_as<add_pointer_t<iter_reference_t<_Ip>>>;
+        ^~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:897:17: note: expanded from macro '_VSTD'
+  #  define _VSTD std
+                  ^
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h:192:3: note: while substituting template arguments into constraint expression here
+    requires(const _Ip& __i) {
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while checking the satisfaction of concept 'contiguous_iterator<rust::Slice<const unsigned char>::iterator>' requested here
+      contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h:122:5: note: while substituting template arguments into constraint expression here
+      contiguous_iterator<iterator_t<_Tp>> &&
+      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Users/nadinemueller/VS_Code/rust/RUST_Tuner/bridge/../target/cxxbridge/rust/cxx.h:282:15: note: while checking the satisfaction of concept 'contiguous_range<rust::Slice<const unsigned char>>' requested here
+  static_assert(std::ranges::contiguous_range<rust::Slice<const uint8_t>>);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/pointer_traits.h:38:8: note: template is declared here
+  struct __pointer_traits_element_type;
+         ^
+  1 error generated.
+  1 error generated.
+  1 error generated.
+  1 error generated.
+  make[3]: *** [CMakeFiles/cxx-juce.dir/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/buffer.rs.cc.o] Error 1
+  make[3]: *** Waiting for unfinished jobs....
+  1 error generated.
+  make[3]: *** [CMakeFiles/cxx-juce.dir/cxx_juce_audio_basics/cxx_juce_audio_basics.cpp.o] Error 1
+  make[3]: *** [CMakeFiles/cxx-juce.dir/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/midi.rs.cc.o] Error 1
+  make[3]: *** [CMakeFiles/cxx-juce.dir/cxx_juce_core/cxx_juce_core.cpp.o] Error 1
+  make[3]: *** [CMakeFiles/cxx-juce.dir/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/cxxbridge/cxx-juce/src/juce_audio_basics/filters.rs.cc.o] Error 1
+  1 error generated.
+  1 error generated.
+  make[3]: *** [CMakeFiles/cxx-juce.dir/cxx_juce_audio_devices/cxx_juce_audio_devices.cpp.o] Error 1
+  make[3]: *** [CMakeFiles/cxx-juce.dir/cxx_juce_events/cxx_juce_events.cpp.o] Error 1
+  1 error generated.
+  make[3]: *** [CMakeFiles/cxx-juce.dir/cxx_juce_audio_processors/cxx_juce_audio_processors.cpp.o] Error 1
+  make[2]: *** [CMakeFiles/cxx-juce.dir/all] Error 2
+  make[1]: *** [CMakeFiles/cxx-juce.dir/rule] Error 2
+  make: *** [cxx-juce] Error 2
+
+  thread 'main' (17195087) panicked at /Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cmake-0.1.54/src/lib.rs:1119:5:
+
+  command did not execute successfully, got: exit status: 2
+
+  build script failed, must exit now
+  stack backtrace:
+     0: __rustc::rust_begin_unwind
+               at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/std/src/panicking.rs:698:5
+     1: core::panicking::panic_fmt
+               at /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234/library/core/src/panicking.rs:80:14
+     2: cmake::fail
+     3: cmake::run
+     4: cmake::Config::build
+     5: build_script_build::main
+     6: core::ops::function::FnOnce::call_once
+  note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.

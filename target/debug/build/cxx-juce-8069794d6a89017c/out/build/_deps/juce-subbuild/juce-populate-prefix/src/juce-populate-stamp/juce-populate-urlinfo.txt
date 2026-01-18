@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=/usr/local/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/download-juce-populate.cmake;COMMAND;/usr/local/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/verify-juce-populate.cmake;COMMAND;/usr/local/bin/cmake;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/extract-juce-populate.cmake
+source_dir=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-src
+work_dir=/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps
+url(s)=https://github.com/juce-framework/JUCE/archive/refs/tags/7.0.12.tar.gz
+hash=SHA256=94e3b35e1990cd67f59736bb5e1eff1cfd9590b16fea82696f309a8f59452434
+      no_extract=
+
