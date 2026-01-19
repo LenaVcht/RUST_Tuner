@@ -47,7 +47,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("Tuner listening... (Ctrl+C to quit)\n");
 
     // 5. Main loop
-    loop 
+    loop {
         if consumer.occupied_len() >= window_size {
             // We fill the buffer
             consumer.pop_slice(&mut buffer);
