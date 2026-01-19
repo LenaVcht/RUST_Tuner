@@ -94,13 +94,103 @@ impl eframe::App for TunerApp {
 
                     ui.add_space(32.0);
 
-                    // Guitar tuning hint at bottom (EADGBE)
+                    ui.separator(); 
+                    ui.add_space(8.0);
+
+                    // References for standard tuning notes
                     ui.label(
-                        egui::RichText::new("E A D G B E")
-                            .size(18.0)
-                            .color(egui::Color32::from_gray(130))
-                            .extra_letter_spacing(4.0),
+                        egui::RichText::new("REFERENCE TUNING NOTES")
+                            .size(12.0)
+                            .color(egui::Color32::from_gray(100))
+                            .extra_letter_spacing(1.0),
                     );
+
+                    ui.add_space(4.0);
+
+                    // 3. Use a Grid to align every instrument and its notes
+                    egui::Grid::new("reference_grid")
+                        .striped(false)
+                        .spacing(egui::vec2(20.0, 8.0))
+                        .show(ui, |ui| {
+                            
+                            // --- Guitar Line ---
+                            ui.label(
+                                egui::RichText::new("Guitar")
+                                    .color(egui::Color32::from_gray(140))
+                            );
+                            ui.label(
+                                egui::RichText::new("E  A  D  G  B  E")
+                                    .size(16.0)
+                                    .color(egui::Color32::from_gray(200))
+                                    .strong()
+                            );
+                            ui.end_row(); // End of guitar line
+
+                            // --- Ukulele Line ---
+                            ui.label(
+                                egui::RichText::new("Ukulele")
+                                    .color(egui::Color32::from_gray(140))
+                            );
+                            ui.label(
+                                egui::RichText::new("G  C  E  A")
+                                    .size(16.0)
+                                    .color(egui::Color32::from_gray(200))
+                                    .strong()
+                            );
+                            ui.end_row(); // End of ukulele line
+
+                            // --- Violin Line ---
+                            ui.label(
+                                egui::RichText::new("Violin")
+                                    .color(egui::Color32::from_gray(140))
+                            );
+                            ui.label(
+                                egui::RichText::new("G  D  A  E")
+                                    .size(16.0)
+                                    .color(egui::Color32::from_gray(200))
+                                    .strong()
+                            );
+                            ui.end_row(); // End of violin line
+
+                            // --- Viola Line ---
+                            ui.label(
+                                egui::RichText::new("Viola")
+                                    .color(egui::Color32::from_gray(140))
+                            );
+                            ui.label(
+                                egui::RichText::new("C  G  D  A")
+                                    .size(16.0)
+                                    .color(egui::Color32::from_gray(200))
+                                    .strong()
+                            );
+                            ui.end_row(); // End of viola line
+
+                            // --- Cello Line ---
+                            ui.label(
+                                egui::RichText::new("Cello")
+                                    .color(egui::Color32::from_gray(140))
+                            );
+                            ui.label(
+                                egui::RichText::new("C  G  D  A")
+                                    .size(16.0)
+                                    .color(egui::Color32::from_gray(200))
+                                    .strong()
+                            );
+                            ui.end_row(); // End of cello line
+
+                            // --- Double Bass Line ---
+                            ui.label(
+                                egui::RichText::new("Double Bass")
+                                    .color(egui::Color32::from_gray(140))
+                            );
+                            ui.label(
+                                egui::RichText::new("E A D G")
+                                    .size(16.0)
+                                    .color(egui::Color32::from_gray(200))
+                                    .strong()
+                            );
+                            ui.end_row(); // End of double bass line
+                        });
                 });
             });
     }
