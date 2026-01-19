@@ -14,16 +14,16 @@ The goal of this project is to develop a high-performance musical instrument tun
 
 ## Development Steps
 
-### Phase 1: Infrastructure & Capture (Completed)
+### Phase 1: Infrastructure & Capture
 
 - Set up the hybrid Rust build environment.
 - Initialized audio input channels and validated signal flow via peak level monitoring.
 
-### Phase 2: Signal Analysis (In Progress)
+### Phase 2: Signal Analysis
 
 - Development of the core pitch detection logic (YIN implementation).
 - Implement the computing of difference between actual sound and the "perfect pitch".
 
-### Phase 3: UI (Upcoming)
+### Phase 3: UI
 
 - Design of a simple graphical interface.
