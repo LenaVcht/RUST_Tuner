@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-subbuild/CMakeFiles/juce-populate"
+		},
+		{
+			"file" : "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-subbuild/CMakeFiles/juce-populate.rule"
+		},
+		{
+			"file" : "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-subbuild/CMakeFiles/juce-populate-complete.rule"
+		},
+		{
+			"file" : "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-build.rule"
+		},
+		{
+			"file" : "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-configure.rule"
+		},
+		{
+			"file" : "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-download.rule"
+		},
+		{
+			"file" : "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-install.rule"
+		},
+		{
+			"file" : "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-mkdir.rule"
+		},
+		{
+			"file" : "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-patch.rule"
+		},
+		{
+			"file" : "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-test.rule"
+		},
+		{
+			"file" : "/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-subbuild/juce-populate-prefix/src/juce-populate-stamp/juce-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"juce-populate"
+		],
+		"name" : "juce-populate"
+	}
+}

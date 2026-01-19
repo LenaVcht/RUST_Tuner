@@ -1,0 +1,10 @@
+/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/deps/cocoa-39a03563e3e10c29.d: /Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/lib.rs /Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/appkit.rs /Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/base.rs /Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/foundation.rs /Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/quartzcore.rs /Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/macros.rs
+
+/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/deps/libcocoa-39a03563e3e10c29.rmeta: /Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/lib.rs /Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/appkit.rs /Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/base.rs /Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/foundation.rs /Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/quartzcore.rs /Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/macros.rs
+
+/Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/lib.rs:
+/Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/appkit.rs:
+/Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/base.rs:
+/Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/foundation.rs:
+/Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/quartzcore.rs:
+/Users/nadinemueller/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/cocoa-0.25.0/src/macros.rs:

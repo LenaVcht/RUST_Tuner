@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/cmake_install.cmake",
+		"/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-build/cmake_install.cmake",
+		"/Users/nadinemueller/VS_Code/rust/RUST_Tuner/target/debug/build/cxx-juce-8069794d6a89017c/out/build/_deps/juce-build/modules/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
