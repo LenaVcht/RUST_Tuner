@@ -203,20 +203,7 @@ fn draw_tuning_area(
         (3.0, egui::Color32::WHITE),
     );
 
-    // 3) Small arrow at the top center (reference indicator)
-    let head_h = 10.0;
-    let head_w = 12.0;
-    let p1 = egui::pos2(center_x, scale_rect.top() - 12.0);
-    let p2 = egui::pos2(center_x - head_w / 2.0, scale_rect.top() - 12.0 + head_h);
-    let p3 = egui::pos2(center_x + head_w / 2.0, scale_rect.top() - 12.0 + head_h);
-
-    painter.add(egui::Shape::convex_polygon(
-        vec![p1, p2, p3],
-        egui::Color32::from_gray(140),
-        egui::Stroke::NONE,
-    ));
-
-    // 4) Mask area behind the big note to remove any remaining ticks/line
+    // 3) Mask area behind the big note to remove any remaining ticks/line
     let mask_width = 90.0;
     let mask_height = scale_height;
     let mask_rect = egui::Rect::from_center_size(
@@ -225,7 +212,7 @@ fn draw_tuning_area(
     );
     painter.rect_filled(mask_rect, 0.0, egui::Color32::from_rgb(15, 15, 15));
 
-    // 5) Big center note rendered on top
+    // 4) Big center note rendered on top
     painter.text(
         egui::pos2(center_x, scale_rect.center().y - 8.0),
         egui::Align2::CENTER_CENTER,
@@ -234,7 +221,7 @@ fn draw_tuning_area(
         accent,
     );
 
-    // 6) Neighbor notes left and right
+    // 5) Neighbor notes left and right
     let neighbor_y = scale_rect.center().y + 32.0;
     let side_offset = scale_rect.width() * 0.55 / 2.0;
 
@@ -254,7 +241,7 @@ fn draw_tuning_area(
         egui::Color32::from_gray(220),
     );
 
-    // 7) Frequency display below the scale
+    // 6) Frequency display below the scale
     let freq_text = if freq_hz > 0.0 {
         format!("{:.1} Hz", freq_hz)
     } else {
