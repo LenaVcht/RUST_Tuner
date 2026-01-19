@@ -36,6 +36,7 @@ pub fn run_gui(shared_state: Arc<Mutex<SharedState>>) -> Result<(), eframe::Erro
 
 impl eframe::App for TunerApp {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+        ctx.request_repaint();
         // Read shared state from audio thread
         let state = self
             .shared_state
