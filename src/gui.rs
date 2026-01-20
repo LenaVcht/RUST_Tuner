@@ -58,7 +58,7 @@ impl eframe::App for TunerApp {
         ctx.request_repaint();
         // Read shared state
         let state = self.shared_state.lock().unwrap();
-        let center_note = format!("{}{}", state.note_name, state.note_octave);
+        let detailed_note = format!("{}{}", state.note_name, state.note_octave);
         let note_letter = state.note_name.clone(); 
         let left = state.neighbor_left.clone();
         let right = state.neighbor_right.clone();
@@ -101,6 +101,7 @@ impl eframe::App for TunerApp {
                     draw_tuning_area(
                         ui,
                         &note_letter,
+                        &detailed_note,
                         &left,
                         &right,
                         freq,
@@ -230,7 +231,8 @@ fn neon_orange() -> egui::Color32 {
 /// - frequency text below
 fn draw_tuning_area(
     ui: &mut egui::Ui,
-    center_note: &str,
+    note_letter: &str,
+    detailed_note: &str,
     left_note: &str,
     right_note: &str,
     freq_hz: f32,
@@ -250,7 +252,7 @@ fn draw_tuning_area(
     // 1) Tick scale
     let scale_height = 48.0;
     let scale_rect = egui::Rect::from_center_size(
-        egui::pos2(center_x, center_y + 10.0),
+        egui::pos2(center_x, center_y - 20.0),
         egui::vec2(rect.width() * 0.9, scale_height),
     );
     let baseline_y = scale_rect.center().y + 6.0;
@@ -322,20 +324,20 @@ fn draw_tuning_area(
     painter.text(
         egui::pos2(center_x, scale_rect.center().y - 8.0),
         egui::Align2::CENTER_CENTER,
-        center_note,
+        note_letter,
         egui::FontId::monospace(64.0),
         accent,
     );
 
     // 5) Neighbor notes left and right
-    let neighbor_y = scale_rect.center().y + 32.0;
-    let side_offset = scale_rect.width() * 0.55 / 2.0;
+    let neighbor_y = scale_rect.center().y + 50.0;
+    let side_offset = scale_rect.width() * 0.80 / 2.0;
 
     painter.text(
         egui::pos2(center_x - side_offset, neighbor_y),
         egui::Align2::CENTER_CENTER,
         left_note,
-        egui::FontId::monospace(20.0),
+        egui::FontId::monospace(25.0),
         egui::Color32::from_gray(220),
     );
 
@@ -343,7 +345,7 @@ fn draw_tuning_area(
         egui::pos2(center_x + side_offset, neighbor_y),
         egui::Align2::CENTER_CENTER,
         right_note,
-        egui::FontId::monospace(20.0),
+        egui::FontId::monospace(25.0),
         egui::Color32::from_gray(220),
     );
 
@@ -355,11 +357,20 @@ fn draw_tuning_area(
     };
 
     painter.text(
-        egui::pos2(center_x, rect.bottom() - 18.0),
+        egui::pos2(center_x, rect.bottom() - 45.0),
         egui::Align2::CENTER_CENTER,
         freq_text,
-        egui::FontId::monospace(18.0),
-        egui::Color32::from_gray(180),
+        egui::FontId::monospace(16.0),
+        egui::Color32::from_gray(160),
+    );
+
+    // 7) Exact note display (with octave)
+    painter.text(
+        egui::pos2(center_x, rect.bottom() - 20.0),
+        egui::Align2::CENTER_CENTER,
+        detailed_note,
+        egui::FontId::monospace(20.0),
+        egui::Color32::from_gray(200),
     );
 
     // Outer subtle outline
