@@ -1,12 +1,31 @@
 use eframe::egui;
 use std::sync::{Arc, Mutex};
 
+use crate::note::{self, Note};
+
 /// Shared state between audio thread (cpal) and GUI.
 #[derive(Default)]
 pub struct SharedState {
-    pub note: String, // e.g. "A4"
-    pub freq_hz: f32, // e.g. 440.0
-    pub cents: f32,   // pitch offset in cents (-50..+50)
+    pub note_name: String,   // "A"
+    pub note_octave: i32,    // 4
+    pub freq_hz: f32,        // 440.0
+    pub cents: f32,          // -3.5
+    pub neighbor_left: String,  // "Ab"
+    pub neighbor_right: String, // "A#"
+}
+
+impl SharedState {
+    // Helper too update from audio thread
+    pub fn update_from(&mut self, note: &Note) {
+        self.note_name = note.name.clone();
+        self.note_octave = note.octave;
+        self.freq_hz = note.freq as f32;
+        self.cents = note.cents as f32;
+        
+        let (left, right) = note.neighbors();
+        self.neighbor_left = left;
+        self.neighbor_right = right;
+    }
 }
 
 /// GUI app struct.
@@ -37,15 +56,15 @@ pub fn run_gui(shared_state: Arc<Mutex<SharedState>>) -> Result<(), eframe::Erro
 impl eframe::App for TunerApp {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
         ctx.request_repaint();
-        // Read shared state from audio thread
-        let state = self
-            .shared_state
-            .lock()
-            .expect("Failed to lock SharedState");
-        let note_full = state.note.clone();
-        let freq_hz = state.freq_hz;
+        // Read shared state
+        let state = self.shared_state.lock().unwrap();
+        let detailed_note = format!("{}{}", state.note_name, state.note_octave);
+        let note_letter = state.note_name.clone(); 
+        let left = state.neighbor_left.clone();
+        let right = state.neighbor_right.clone();
+        let freq = state.freq_hz;
         let cents = state.cents;
-        drop(state); // release mutex ASAP
+        drop(state);
 
         // Decide if we are "in tune"
         let in_tune_threshold = 5.0; // +/- 5 cents window
@@ -53,10 +72,7 @@ impl eframe::App for TunerApp {
 
         let main_color = if in_tune { neon_green() } else { neon_orange() };
 
-        // Derive center/neighbor note names
-        let (center_pc, _oct) = parse_note_name(&note_full).unwrap_or((9, 4)); // default A
-        let (center_name, left_name, right_name) = neighbor_note_names(center_pc);
-
+        // Start of the interface drawing
         egui::CentralPanel::default()
             .frame(
                 egui::Frame::none()
@@ -84,23 +100,114 @@ impl eframe::App for TunerApp {
                     // Center note + scale + moving line + neighbor notes + Hz
                     draw_tuning_area(
                         ui,
-                        &center_name,
-                        &left_name,
-                        &right_name,
-                        freq_hz,
+                        &note_letter,
+                        &detailed_note,
+                        &left,
+                        &right,
+                        freq,
                         cents,
                         main_color,
                     );
 
                     ui.add_space(32.0);
 
-                    // Guitar tuning hint at bottom (EADGBE)
+                    ui.separator(); 
+                    ui.add_space(8.0);
+
+                    // References for standard tuning notes
                     ui.label(
-                        egui::RichText::new("E A D G B E")
-                            .size(18.0)
-                            .color(egui::Color32::from_gray(130))
-                            .extra_letter_spacing(4.0),
+                        egui::RichText::new("REFERENCE TUNING NOTES")
+                            .size(12.0)
+                            .color(egui::Color32::from_gray(100))
+                            .extra_letter_spacing(1.0),
                     );
+
+                    ui.add_space(4.0);
+
+                    // 3. Use a Grid to align every instrument and its notes
+                    egui::Grid::new("reference_grid")
+                        .striped(false)
+                        .spacing(egui::vec2(20.0, 8.0))
+                        .show(ui, |ui| {
+                            
+                            // --- Guitar Line ---
+                            ui.label(
+                                egui::RichText::new("Guitar")
+                                    .color(egui::Color32::from_gray(140))
+                            );
+                            ui.label(
+                                egui::RichText::new("E  A  D  G  B  E")
+                                    .size(16.0)
+                                    .color(egui::Color32::from_gray(200))
+                                    .strong()
+                            );
+                            ui.end_row(); // End of guitar line
+
+                            // --- Ukulele Line ---
+                            ui.label(
+                                egui::RichText::new("Ukulele")
+                                    .color(egui::Color32::from_gray(140))
+                            );
+                            ui.label(
+                                egui::RichText::new("G  C  E  A")
+                                    .size(16.0)
+                                    .color(egui::Color32::from_gray(200))
+                                    .strong()
+                            );
+                            ui.end_row(); // End of ukulele line
+
+                            // --- Violin Line ---
+                            ui.label(
+                                egui::RichText::new("Violin")
+                                    .color(egui::Color32::from_gray(140))
+                            );
+                            ui.label(
+                                egui::RichText::new("G  D  A  E")
+                                    .size(16.0)
+                                    .color(egui::Color32::from_gray(200))
+                                    .strong()
+                            );
+                            ui.end_row(); // End of violin line
+
+                            // --- Viola Line ---
+                            ui.label(
+                                egui::RichText::new("Viola")
+                                    .color(egui::Color32::from_gray(140))
+                            );
+                            ui.label(
+                                egui::RichText::new("C  G  D  A")
+                                    .size(16.0)
+                                    .color(egui::Color32::from_gray(200))
+                                    .strong()
+                            );
+                            ui.end_row(); // End of viola line
+
+                            // --- Cello Line ---
+                            ui.label(
+                                egui::RichText::new("Cello")
+                                    .color(egui::Color32::from_gray(140))
+                            );
+                            ui.label(
+                                egui::RichText::new("C  G  D  A")
+                                    .size(16.0)
+                                    .color(egui::Color32::from_gray(200))
+                                    .strong()
+                            );
+                            ui.end_row(); // End of cello line
+
+                            // --- Double Bass Line ---
+                            ui.label(
+                                egui::RichText::new("Double Bass")
+                                    .color(egui::Color32::from_gray(140))
+                            );
+                            ui.label(
+                                egui::RichText::new("E A D G")
+                                    .size(16.0)
+                                    .color(egui::Color32::from_gray(200))
+                                    .strong()
+                            );
+                            ui.end_row(); // End of double bass line
+                        });
                 });
             });
     }
@@ -124,7 +231,8 @@ fn neon_orange() -> egui::Color32 {
 /// - frequency text below
 fn draw_tuning_area(
     ui: &mut egui::Ui,
-    center_note: &str,
+    note_letter: &str,
+    detailed_note: &str,
     left_note: &str,
     right_note: &str,
     freq_hz: f32,
@@ -144,7 +252,7 @@ fn draw_tuning_area(
     // 1) Tick scale
     let scale_height = 48.0;
     let scale_rect = egui::Rect::from_center_size(
-        egui::pos2(center_x, center_y + 10.0),
+        egui::pos2(center_x, center_y - 20.0),
         egui::vec2(rect.width() * 0.9, scale_height),
     );
     let baseline_y = scale_rect.center().y + 6.0;
@@ -203,20 +311,7 @@ fn draw_tuning_area(
         (3.0, egui::Color32::WHITE),
     );
 
-    // 3) Small arrow at the top center (reference indicator)
-    let head_h = 10.0;
-    let head_w = 12.0;
-    let p1 = egui::pos2(center_x, scale_rect.top() - 12.0);
-    let p2 = egui::pos2(center_x - head_w / 2.0, scale_rect.top() - 12.0 + head_h);
-    let p3 = egui::pos2(center_x + head_w / 2.0, scale_rect.top() - 12.0 + head_h);
-
-    painter.add(egui::Shape::convex_polygon(
-        vec![p1, p2, p3],
-        egui::Color32::from_gray(140),
-        egui::Stroke::NONE,
-    ));
-
-    // 4) Mask area behind the big note to remove any remaining ticks/line
+    // 3) Mask area behind the big note to remove any remaining ticks/line
     let mask_width = 90.0;
     let mask_height = scale_height;
     let mask_rect = egui::Rect::from_center_size(
@@ -225,24 +320,24 @@ fn draw_tuning_area(
     );
     painter.rect_filled(mask_rect, 0.0, egui::Color32::from_rgb(15, 15, 15));
 
-    // 5) Big center note rendered on top
+    // 4) Big center note rendered on top
     painter.text(
         egui::pos2(center_x, scale_rect.center().y - 8.0),
         egui::Align2::CENTER_CENTER,
-        center_note,
+        note_letter,
         egui::FontId::monospace(64.0),
         accent,
     );
 
-    // 6) Neighbor notes left and right
-    let neighbor_y = scale_rect.center().y + 32.0;
-    let side_offset = scale_rect.width() * 0.55 / 2.0;
+    // 5) Neighbor notes left and right
+    let neighbor_y = scale_rect.center().y + 50.0;
+    let side_offset = scale_rect.width() * 0.80 / 2.0;
 
     painter.text(
         egui::pos2(center_x - side_offset, neighbor_y),
         egui::Align2::CENTER_CENTER,
         left_note,
-        egui::FontId::monospace(20.0),
+        egui::FontId::monospace(25.0),
         egui::Color32::from_gray(220),
     );
 
@@ -250,11 +345,11 @@ fn draw_tuning_area(
         egui::pos2(center_x + side_offset, neighbor_y),
         egui::Align2::CENTER_CENTER,
         right_note,
-        egui::FontId::monospace(20.0),
+        egui::FontId::monospace(25.0),
         egui::Color32::from_gray(220),
     );
 
-    // 7) Frequency display below the scale
+    // 6) Frequency display below the scale
     let freq_text = if freq_hz > 0.0 {
         format!("{:.1} Hz", freq_hz)
     } else {
@@ -262,11 +357,20 @@ fn draw_tuning_area(
     };
 
     painter.text(
-        egui::pos2(center_x, rect.bottom() - 18.0),
+        egui::pos2(center_x, rect.bottom() - 45.0),
         egui::Align2::CENTER_CENTER,
         freq_text,
-        egui::FontId::monospace(18.0),
-        egui::Color32::from_gray(180),
+        egui::FontId::monospace(16.0),
+        egui::Color32::from_gray(160),
+    );
+
+    // 7) Exact note display (with octave)
+    painter.text(
+        egui::pos2(center_x, rect.bottom() - 20.0),
+        egui::Align2::CENTER_CENTER,
+        detailed_note,
+        egui::FontId::monospace(20.0),
+        egui::Color32::from_gray(200),
     );
 
     // Outer subtle outline
@@ -275,66 +379,4 @@ fn draw_tuning_area(
         18.0,
         egui::Stroke::new(1.0, egui::Color32::from_gray(60)),
     );
-}
-
-/// Parses a note string like "A4", "C#3", "Gb2" into (pitch_class, octave).
-/// pitch_class: 0 = C, 1 = C#/Db, ..., 11 = B/Cb
-fn parse_note_name(note: &str) -> Option<(usize, i32)> {
-    if note.len() < 2 {
-        return None;
-    }
-
-    // Split letters/accidental from octave
-    let mut chars = note.chars().peekable();
-    let mut name = String::new();
-    while let Some(&c) = chars.peek() {
-        if c.is_ascii_alphabetic() || c == '#' || c == 'b' {
-            name.push(c);
-            chars.next();
-        } else {
-            break;
-        }
-    }
-
-    let octave_str: String = chars.collect();
-    let octave: i32 = octave_str.parse().ok().unwrap_or(4);
-
-    let pitch_class = match name.as_str() {
-        "C" => 0,
-        "C#" | "Db" => 1,
-        "D" => 2,
-        "D#" | "Eb" => 3,
-        "E" | "Fb" => 4,
-        "F" | "E#" => 5,
-        "F#" | "Gb" => 6,
-        "G" => 7,
-        "G#" | "Ab" => 8,
-        "A" => 9,
-        "A#" | "Bb" => 10,
-        "B" | "Cb" => 11,
-        _ => 9, // default to A
-    };
-
-    Some((pitch_class, octave))
-}
-
-/// Returns (center note name, left neighbor, right neighbor),
-/// using flats on the left and sharps on the right to mimic the mockups.
-fn neighbor_note_names(center_pc: usize) -> (String, String, String) {
-    const SHARP_NAMES: [&str; 12] = [
-        "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B",
-    ];
-
-    const FLAT_NAMES: [&str; 12] = [
-        "C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B",
-    ];
-
-    let left_pc = (center_pc + 11) % 12;
-    let right_pc = (center_pc + 1) % 12;
-
-    let center = SHARP_NAMES[center_pc].to_string();
-    let left = FLAT_NAMES[left_pc].to_string();
-    let right = SHARP_NAMES[right_pc].to_string();
-
-    (center, left, right)
 }

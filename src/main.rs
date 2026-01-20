@@ -1,3 +1,4 @@
+mod note;
 mod gui;
 
 use cpal::traits::{DeviceTrait, HostTrait, StreamTrait};
@@ -8,17 +9,12 @@ use std::sync::{Arc, Mutex};
 use std::thread;
 use std::io::Write;
 
-// We import the SharedState struct from the gui module
 use gui::SharedState;
+use note::Note;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     // 1. Creation of shared state
-    let shared_state = Arc::new(Mutex::new(SharedState {
-        note: "--".to_string(),
-        freq_hz: 0.0,
-        cents: 0.0,
-    }));
-
+    let shared_state = Arc::new(Mutex::new(SharedState::default()));
     let shared_state_audio = shared_state.clone();
 
     // 2. Audio Configuration
@@ -69,20 +65,18 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
                     // We filter out aberrant or too low frequencies
                     if frequency > 20.0 && frequency < 2000.0 {
-                        let (note, cents) = freq_to_note(frequency);
+                        let note_info = Note::from_frequency(frequency);
 
                         // A. UPDATE GUI
                         {
                             if let Ok(mut state) = shared_state_audio.lock() {
-                                state.note = note.clone();
-                                state.freq_hz = frequency as f32;
-                                state.cents = cents as f32;
+                                state.update_from(&note_info);
                             }
                         }
 
                         // B. CONSOLE DISPLAY (DEBUG)
                         // Debug output in console
-                        print_tuner(note, cents, frequency);
+                        print_tuner(&note_info);
                     }
                 }
             } else {
@@ -97,35 +91,17 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     Ok(())
 }
 
-// --- UTILITY FUNCTIONS ---
-
-fn freq_to_note(freq: f64) -> (String, f64) {
-    let a4 = 440.0;
-    let semitones_from_a4 = 12.0 * (freq / a4).log2();
-    let midi_note = (69.0 + semitones_from_a4).round();
-    
-    let freq_midi = a4 * 2.0f64.powf((midi_note - 69.0) / 12.0);
-    let cents = 1200.0 * (freq / freq_midi).log2();
-
-    let notes = [
-        "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"
-    ];
-    
-    let note_index = (midi_note as usize) % 12;
-    let octave = (midi_note as isize / 12) - 1;
-    
-    (format!("{}{}", notes[note_index], octave), cents)
-}
+// --- DEBUG FUNCTION ---
 
 /// Debug console print function
-fn print_tuner(note: String, cents: f64, freq: f64) {
+fn print_tuner(note: &Note) {
     // Clear the current line
     print!("\r\x1b[K"); 
     
     let bar_width = 20;
     let mut bar = String::new();
     
-    let position = ((cents + 50.0) / 100.0 * (bar_width as f64 * 2.0)).round() as usize;
+    let position = ((note.cents + 50.0) / 100.0 * (bar_width as f64 * 2.0)).round() as usize;
     // Safety clamp to avoid out-of-bounds
     let position = position.clamp(0, bar_width * 2);
 
@@ -139,11 +115,11 @@ fn print_tuner(note: String, cents: f64, freq: f64) {
         }
     }
 
-    let color = if cents.abs() < 5.0 { "\x1b[32m" } else { "\x1b[31m" };
+    let color = if note.cents.abs() < 5.0 { "\x1b[32m" } else { "\x1b[31m" };
     let reset = "\x1b[0m";
 
-    print!("Note: {:<4} Freq: {:<6.1} Hz {}[{}] {:+.1} cents{}", 
-        note, freq, color, bar, cents, reset);
+    print!("Note: {:<4} Freq: {:<6.1} Hz {}[{}] {:+.1} note.cents{}", 
+        note.full_name(), note.freq, color, bar, note.cents, reset);
         
     std::io::stdout().flush().unwrap();
 }
