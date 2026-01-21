@@ -27,3 +27,9 @@ The goal of this project is to develop a high-performance musical instrument tun
 ### Phase 3: UI
 
 - Design of a simple graphical interface.
+
+### Screenshots of our Application
+<img src="https://github.com/LenaVcht/RUST_Tuner/blob/main/Screenshots/Snapshot_26-01-21_17-42-20.png" height="60%" width="80%" alt="Screenshot"/>
+<img src="https://github.com/LenaVcht/RUST_Tuner/blob/main/Screenshots/Snapshot_26-01-21_17-44-17.png" height="60%" width="80%" alt="Screenshot"/>
+
+
